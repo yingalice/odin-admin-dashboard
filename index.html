@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <script src="https://kit.fontawesome.com/602d755a29.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header sticky">
+      <div class="header__row-1">
+        <div class="hamburger">
+          <button type="button">
+            <svg class="hamburger__toggle"><use href="./imgs/icons.svg#hamburger" /></svg>
+          </button>
+        </div>
+        <div class="search">
+          <button class="search__button-go" type="button">
+            <svg><use href="./imgs/icons.svg#search" /></svg>
+          </button>
+          <input class="search__input ellipsis-overflow" type="search" autocomplete="off" name="search-term" id="search-term" placeholder="Search photos from Pixabay">
+          <button class="search__button-clear" type="button">
+            <svg><use href="./imgs/icons.svg#clear" /></svg>
+          </button>
+        </div>
+        <div class="account">
+          <button type="button">
+            <svg class="account__notifications"><use href="./imgs/icons.svg#notifications" /></svg>
+          </button>
+          <button type="button">
+            <img class="account__avatar" src="./imgs/profile-avatar.png" alt="Profile Avatar">
+          </button>
+        </div>
+      </div>
+      <div class="header__row-2">
+        <div class="greeting">
+          <img class="greeting__avatar" src="./imgs/profile-avatar.png" alt="Profile Avatar">
+          <div class="greeting__text">
+            <p>Hi there,</p>
+            <p>Alice Ying (@yingalice)</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="button__latest" type="button">Latest</button>
+          <button class="button__trending" type="button">Trending</button>
+          <button class="button__editors-choice" type="button">Editor's Choice</button>
+        </div>
+    </div>
+    </header>
+
+    <nav class="nav sticky">      
+      <div class="nav__header">
+        <div class="nav__title">
+          <svg><use href="./imgs/icons.svg#dashboard" /></svg>
+          <span>Dashboard</span>
+        </div>
+        <div class="nav__arrow">
+          <svg><use href="./imgs/icons.svg#arrow-left" /></svg>
+        </div>
+      </div>
+
+      <div class="nav__top">
+        <a href="#" class="nav__item">
+          <svg><use href="./imgs/icons.svg#home" /></svg>
+          <span>Home</span>
+        </a>
+        <a href="#" class="nav__item">
+          <svg><use href="./imgs/icons.svg#profile" /></svg>
+          <span>Profile</span>
+        </a>
+        <a href="#" class="nav__item">
+          <svg><use href="./imgs/icons.svg#messages" /></svg>
+          <span>Messages</span>
+        </a>
+        <a href="#" class="nav__item">
+          <svg><use href="./imgs/icons.svg#history" /></svg>
+          <span>History</span>
+        </a>
+        <a href="#" class="nav__item">
+          <svg><use href="./imgs/icons.svg#tasks" /></svg>
+          <span>Tasks</span>
+        </a>
+        <a href="#" class="nav__item">
+          <svg><use href="./imgs/icons.svg#communities" /></svg>
+          <span>Communities</span>
+        </a>
+      </div>
+
+      <div class="nav__bottom">
+        <a href="#" class="nav__item">
+          <svg><use href="./imgs/icons.svg#settings" /></svg>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="nav__item">
+          <svg><use href="./imgs/icons.svg#support" /></svg>
+          <span>Support</span>
+        </a>
+        <a href="#" class="nav__item">
+          <svg><use href="./imgs/icons.svg#privacy" /></svg>
+          <span>Privacy</span>
+        </a>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="results"></div>
+      <div class="news">
+        <div class="news__section">
+          <h1 class="news__header">Announcements</h1>
+          <div class="announcements">
+            <div class="announcements__post">
+              <a href="#" class="announcements__title">Site Maintenance</a>
+              <p class="announcements__details">Nulla at accumsan dui. Cras ornare vel augue ut porttitor. Integer lectus eros, dictum ut tempor quis, varius vel magna. Duis dui ex, tempor eu lectus non, eleifend porttitor nunc. Curabitur consectetur tincidunt augue, ac fringilla velit congue vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin eget justo justo.</p>
+            </div>
+            <div class="announcements__post">
+              <a href="#" class="announcements__title">Community Share Day</a>
+              <p class="announcements__details">Suspendisse porta lacus iaculis facilisis sagittis. Ut congue pretium leo, dictum ullamcorper lectus condimentum at. Vestibulum consequat ligula id arcu scelerisque, sit amet blandit justo viverra. Mauris eget leo at nibh interdum elementum nec et tortor. Nunc pretium risus vitae ligula ullamcorper aliquet.</p>
+            </div>
+            <div class="announcements__post">
+              <a href="#" class="announcements__title">Updated Privacy Policy</a>
+              <p class="announcements__details">Sed sodales tincidunt accumsan. Duis orci libero, venenatis quis tellus tincidunt, fermentum posuere purus. Sed ultricies elementum arcu at suscipit. Integer mi lorem, consequat ut mollis sed, semper sed ante. Pellentesque eget enim magna. Aliquam ornare mollis nisl et vehicula. Proin maximus placerat lobortis.</p>
+            </div>
+          </div>  
+        </div>
+        <div class="news__section">
+          <h1 class="news__header">Trending</h1>
+          <div class="trending">
+            <div class="trending__user">
+              <a href="#" class="trending__avatar">
+                <img src="./imgs/male-glasses-avatar.png" width="45" height="45" alt="@ThruTheLens avatar">
+              </a>
+              <div class="trending__text">
+                <a href="#">
+                  <p class="trending__username">@ThruTheLens</p>
+                </a>
+                <p class="trending__description">Capturing travel photos</p>
+              </div>
+            </div>
+            <div class="trending__user">
+              <a href="#" class="trending__avatar">
+                <img src="./imgs/female-doctor-avatar.png" width="45" height="45" alt="@DrAllie avatar">
+              </a>
+              <div class="trending__text">
+                <a href="#">
+                  <p class="trending__username">@DrAllie</p>
+                </a>
+                <p class="trending__description">Saving kids in war zones</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="trending__user">
+              <a href="#" class="trending__avatar">
+                <img src="./imgs/male-beard-avatar.png" width="45" height="45" alt="@TechyTim avatar">
+              </a>
+              <div class="trending__text">
+                <a href="#">
+                  <p class="trending__username">@TechyTim</p>
+                </a>
+                <p class="trending__description">Training AI models</p>
+              </div>
+            </div>
+            <div class="trending__user">
+              <a href="#" class="trending__avatar">
+                <img src="./imgs/female-woman-avatar.png" width="45" height="45" alt="@ScienceForDummies avatar">
+              </a>
+              <div class="trending__text">
+                <a href="#">
+                  <p class="trending__username">@Science4Dummies</p>
+                </a>
+                <p class="trending__description">Simplifying science for all</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="toast">
+    </div>
+
+    <footer class="footer">
+      <p class="footer__text">Copyright &copy; 2023 by
+        <a class="footer__link" href="https://github.com/yingalice" target="_blank">yingalice</a>
+        <i class="fa-brands fa-github"></i>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
